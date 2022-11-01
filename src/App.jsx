@@ -16,9 +16,11 @@ function App() {
     <div className="pt-20">
         <div className="container mx-auto px-5">
           <div className="pt-6 grid grid-cols-1 lg:grid-cols-6 lg:gap-6">
-            <div className="col-span-4 sm:col-span-4 lg:col-span-4">
+            <div className="col-span-4 sm:col-span-4 lg:col-span-6">
               <LandPage />
-              {/* <Todaylist /> */}
+            </div>
+            <div className='col-span-4 sm:col-span-4 lg:col-span-4'>
+              <Todaylist />
             </div>
             <div className="col-span-2 lg:col-span-2">
               <Asidebar />
