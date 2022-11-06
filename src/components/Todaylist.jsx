@@ -16,6 +16,7 @@ export const Todaylist = (props) => {
     }
     fetchPosts();
   }, []);
+  
   return data.map((p, index) => {
   return (
     <div>
