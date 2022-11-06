@@ -1,13 +1,7 @@
 import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure} from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
-const navigation = [
-  { name: 'Product', href: '#', current: true },
-  { name: 'Topics', href: '#', current: false },
-  { name: 'Blog', href: '#', current: false },
-  { name: 'Community', href: '#', current: false },
-]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -46,19 +40,10 @@ export default function Nav() {
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current ='text-gray-600  hover:text-gray-700',
-                          'px-3 py-2 rounded-md font-medium text-xl'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
+                    <a href="#" className='text-gray-600  hover:text-gray-700 px-3 py-2 rounded-md font-medium text-xl'>Products</a>
+                    <a href="#" className='text-gray-600  hover:text-gray-700 px-3 py-2 rounded-md font-medium text-xl'>Topics</a>
+                    <a href="#" className='text-gray-600  hover:text-gray-700 px-3 py-2 rounded-md font-medium text-xl'>Blog</a>
+                    <a href="#" className='text-gray-600  hover:text-gray-700 px-3 py-2 rounded-md font-medium text-xl'>Community</a>
                   </div>
                 </div>
               </div>
@@ -70,20 +55,10 @@ export default function Nav() {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current ='text-gray-600',
-                    'block px-3 py-2 rounded-md text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
+              <a href="#" className='text-gray-600  block px-3 py-2 rounded-md text-base font-medium'>Products</a>
+                <a href="#" className='text-gray-600 block px-3 py-2 rounded-md text-base font-medium'>Topics</a>
+                <a href="#" className='text-gray-600 block px-3 py-2 rounded-md text-base font-medium'>Blog</a>
+                <a href="#" className='text-gray-600 block px-3 py-2 rounded-md text-base font-medium'>Community</a>
             </div>
           </Disclosure.Panel>
         </>

@@ -12,16 +12,6 @@ export const Asidebar = () => {
   return (
     <div>
       <aside>
-        <div className="relative">
-          <img src={Kittycard} alt="kitty card right" />
-          <div className="absolute bottom-25 left-25">
-          <button className="text-f11 font-bold inline-flex items-center bg-white border border-gray-300 mr-2 uppercase py-2 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-          <span className="f13 text-hunt">winner announced</span>
-        </button>
-          </div>
-        </div>
-
-        
         <div>
           <div className="mt-3 text-base font-bold mb-3 text-gray-900">
             Upcomming Products

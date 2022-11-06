@@ -4,6 +4,7 @@ import Asidebar from './components/Asidebar';
 import Todaylist from './components/Todaylist';
 import Foot from './components/Foot';
 import LandPage from './components/LandPage';
+import Topics from './components/Topics';
 
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
             </div>
             <div className="col-span-2 lg:col-span-2">
               <Asidebar />
+            </div>
+            <div className='col-span-4 sm:col-span-4 lg:col-span-4'>
+              <Topics />
             </div>
           </div>
         </div>

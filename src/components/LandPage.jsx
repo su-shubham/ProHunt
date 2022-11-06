@@ -1,11 +1,11 @@
 export default function LandPage() {
   return (
-    <div class="flex items-center flex-wrap mb-20">
-      <div class="w-full md:w-1/2 text-center">
-        <h4 class="text-6xl text-gray-800 font-bold mb-3">
+    <div className="flex items-center flex-wrap mb-20 ">
+      <div className="w-full md:w-1/2 text-center ">
+        <h4 className="text-6xl text-gray-800 font-bold mb-3">
           Add Your <span className="text-[#f43f5e]">Features</span>
         </h4>
-        <p class="text-gray-600 mb-8 text-xl">
+        <p className="text-gray-600 mb-8 text-xl">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
           consequatur minus dolorum voluptates veniam eligendi quo sint. Est,
           voluptatum facere.
@@ -21,7 +21,7 @@ export default function LandPage() {
           </div>
         </div>
       </div>
-      <div class="w-full md:w-1/2">
+      <div className="w-full md:w-1/2">
         <img
           src="https://www.fief.dev/illustrations/castle.svg?auto=format&fit=max&w=64"
           alt="Monitoring"
