@@ -7,6 +7,9 @@ export default defineConfig({
   preview: {
     port: 3000
   },
+  build: {
+    chunkSizeWarningLimit: 1600,
+  },
   plugins: [react(),
     nodePolyfills({
       // Whether to polyfill `node:` protocol imports.

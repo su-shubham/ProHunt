@@ -8,9 +8,12 @@ import Newsletter from './Newsletter';
 import Topics from './Topics';
 import LandPage from './LandPage';
 import Todaylist from './Todaylist'
+import {  Popover  } from '@typeform/embed-react'
+
 
 function Fief() {
   return (
+    <>
      <FiefAuthProvider 
       baseURL={import.meta.env.VITE_BASE_URI}
       clientId={import.meta.env.VITE_FIEF_CLIENT_ID}
@@ -19,13 +22,17 @@ function Fief() {
         <Header />  {}
         <Routes>  {}
           <Route path="/" element={<LandPage />} /> {}
-          <Route path="/product" element={<RequireAuth><Todaylist /></RequireAuth>} /> {}
           <Route path="/topics" element={<RequireAuth><Topics /></RequireAuth>} /> {}
           <Route path="/callback" element={<Callback />} /> {}
-  
         </Routes>
       </div>
     </FiefAuthProvider> 
+     <div className="example_popover">
+     <Popover id="#">
+       <button className="btn">Open Popover</button>
+     </Popover>
+   </div>
+   </>
   );
 }
 
