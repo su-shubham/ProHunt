@@ -33,9 +33,7 @@ export const Todaylist = (props) => {
                     {p.title}
                   </h3>
                   <p className="text-f13 font-normal">
-                    <a href="javascript.void(0)">
                       {p.description}
-                      </a>
                   </p>
                   <div>
                     <span className="inline-flex items-center mt-3 border border-grey-100 rounded pl-2 pb-1 pt-1 pr-2">
@@ -75,7 +73,7 @@ export const Todaylist = (props) => {
                       />
                     </svg>
                     <span className="text-f13 font-semibold mt-1 block">
-                      {p.userId}
+                      {p.title}
                     </span>
                   </div>
                 </div>
