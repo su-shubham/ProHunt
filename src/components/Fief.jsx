@@ -22,7 +22,7 @@ function Fief() {
         <Header />  {}
         <Routes>  {}
           <Route path="/" element={<LandPage />} /> {}
-          <Route path="/topics" element={<RequireAuth><Topics /></RequireAuth>} /> {}
+          <Route path="/topics" element={<Topics />} />{}
           <Route path="/callback" element={<Callback />} /> {}
         </Routes>
       </div>
