@@ -1,12 +1,12 @@
 import Asidebar from './Asidebar';
 import Todaylist from './Todaylist';
 import Topics from './Topics';
+import {  Popover,PopupButton  } from '@typeform/embed-react'
 
 
 export default function LandPage() {
   return (
-    <div className=''>
-
+    <>
     <div className="flex items-center flex-wrap mb-20 ">
       <div className="w-full md:w-1/2 text-center ml-32">
         <h4 className="text-6xl text-gray-800 font-bold mb-3 ">
@@ -19,15 +19,20 @@ export default function LandPage() {
         </p>
         <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
           <div className="mb-4">
-          {/* <button className="btn-sm text-white bg-[#f43f5e] hover:bg-rose-500 ml-3 p-3 rounded-md font-[700]" onClick={Popover}>
-          List Your Product
-        </button> */}
-            <a
+          <div className="btn-sm text-white bg-[#f43f5e] hover:bg-rose-500 ml-3 p-3 rounded-md font-[700]" onClick={Popover}>
+         <PopupButton
+            style={{ color: 20 }}
+            id="s8haTiPZ" >
+               List Your Product
+          </PopupButton>
+        </div>
+            {/* <a
               href=""
               className="btn-sm text-white bg-[#f43f5e] hover:bg-rose-500 ml-3 p-3 rounded-md font-[700]"
               >
+                
               List Your Products
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
@@ -56,6 +61,13 @@ export default function LandPage() {
           </div>
         </div>
       </div>
-          </div>
+      {/* <div className="example_popover">
+     {/* <Popover 
+     style={{ color: 20 }}
+     id="s8haTiPZ" > */}
+       {/* <button className="btn">Open Popover</button> */}
+     {/* </Popover> */}
+          {/* </div> */} 
+          </>
   );
 }

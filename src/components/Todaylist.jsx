@@ -1,21 +1,44 @@
 import React from 'react';
-// import axios from "axios";
+import { useEffect,useState } from 'react';
+import {useFiefTokenInfo} from '@fief/fief/react'
+import axios from "axios";
 
 
 export const Todaylist = (props) => {
   const [data, setData] = React.useState([])
-  // React.useEffect(() => {
-  //   axios.get('http://localhost:8000/api/posts')
-  //     .then(res => setData(res.data))
-  // },[]);
+  const tokenInfo = useFiefTokenInfo(); 
+  const [user, setUser] = useState();
   React.useEffect(() => {
-    const fetchPosts = async () => {
-      const response = await fetch('http://localhost:8000/api/posts');
-      const postsData = await response.json();
-      setData(postsData);
-    }
-    fetchPosts();
-  }, []);
+    axios.get('http://localhost:8000/api/posts')
+      .then(res => setData(res.data))
+  },[]);
+//   useEffect(() => {
+//     const fetchNames = async () => {
+//     try{
+//     const res = await Promise.all([
+//       fetch('http://localhost:8000/vote'),
+//       fetch('http://localhost:8000/api/posts')
+//     ]);
+//     const data = await Promise.all(res.map(r => r.json()))
+//     console.log(data.flat());
+//   }
+//   catch {
+//     throw Error("Promise failed");
+//   }}
+// });
+// const fetchPosts = async () => {
+//   const accessToken = tokenInfo.access_token;
+    //   const response = await fetch('http://localhost:8000/api/posts',
+    //   {
+    //     headers: {
+    //         Authorization: `Bearer ${accessToken}`,
+    //     }
+    // })
+  //     const postsData = await response.json();
+  //     setData(postsData);
+  //   }
+  //   fetchPosts();
+  // },  [tokenInfo]);
   
   return data.map((p, index) => {
   return (
@@ -30,7 +53,7 @@ export const Todaylist = (props) => {
                 </div>
                 <div className="ml-2">
                   <h3 className="text-base font-bold text-gray-900">
-                    {p.title}
+                    {p.id}
                   </h3>
                   <p className="text-f13 font-normal">
                       {p.description}
@@ -73,7 +96,7 @@ export const Todaylist = (props) => {
                       />
                     </svg>
                     <span className="text-f13 font-semibold mt-1 block">
-                      {p.title}
+                      73
                     </span>
                   </div>
                 </div>
