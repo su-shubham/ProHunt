@@ -16,9 +16,6 @@ export default function LandPage() {
         </p>
         <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
           <div className="mb-4">
-          {/* <button className="btn-sm text-white bg-[#f43f5e] hover:bg-rose-500 ml-3 p-3 rounded-md font-[700]" onClick={Popover}>
-          List Your Product
-      </button> */}
             <a
               href=""
               className="btn-sm text-white bg-[#f43f5e] hover:bg-rose-500 ml-3 p-3 rounded-md font-[700]"
