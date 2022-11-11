@@ -1,6 +1,4 @@
 import React from 'react';
-
-import Hiring from './Hiring';
 import Newsletter from './Newsletter';
 import Sideone from '../assets/sideOne.jpeg';
 import Sidetwo from '../assets/sideTwo.jpeg';
@@ -80,7 +78,7 @@ export const Asidebar = () => {
 
 
             <div className="p-5 flex">
-              <button className="w-full font-bold text-f11 items-center bg-white border border-gray-300 uppercase py-2 focus:outline-none hover:bg-gray-200 rounded text-base ">
+              <button className="w-full font-bold text-f11 items-center border border-gray-300 uppercase py-2 focus:outline-none text-white bg-[#f43f5e] rounded text-base ">
                 <span className="f12 text-hunt">view all</span>
               </button>
             </div>
@@ -88,7 +86,6 @@ export const Asidebar = () => {
 
           </div>
         </div>
-        <Hiring />
         <Newsletter />
       </aside>
     </div>
