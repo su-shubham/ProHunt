@@ -34,9 +34,7 @@ const Topics = () => {
                           Audioblogs
                         </h3>
                         <p className="text-f13 font-normal">
-                          <a href="javascript.void(0)">
                             Listen to any web article in your podcast player
-                          </a>
                         </p>
                         <div className="visible md:invisible ">
                           <span className="inline-flex items-center mt-3 border border-grey-100 rounded pl-2 pb-1 pt-1 pr-2 ">
