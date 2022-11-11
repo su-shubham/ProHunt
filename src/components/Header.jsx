@@ -38,29 +38,47 @@ const Header = () => {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                <Link to="/">
+                {/* <Link to="/">
                 <img
-                    className="block h-8 w-auto lg:hidden"
+                    className="block h-8 w-auto lg:hidden animate-bounce"
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                   />
-                </Link>
+                </Link> */}
                   <img
-                    className="hidden h-8 w-auto lg:block"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    className=" h-8 w-auto animate-bounce"
+                    src="../src/assets/logo.png"
                     alt="Your Company"
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    <a className='text-gray-600  hover:text-gray-700 px-3 py-2 rounded-md font-medium text-xl '><Link to="/">Products</Link></a>
-                    <a className='text-gray-600  hover:text-gray-700 px-3 py-2 rounded-md font-medium text-xl'><Link to="/topics">Topics</Link></a>
-                    <a className='text-gray-600  hover:text-gray-700 px-3 py-2 rounded-md font-medium text-xl'><Link to="/blog">Blog</Link></a>
-                    <a className='text-gray-600  hover:text-gray-700 px-3 py-2 rounded-md font-medium text-xl'><Link to="/community">Community</Link></a>
+                    <ul className='text-lg tracking-wide items-center flex gap-x-8'>
+                      <li className='hover:scale-125 duration-300 py-1 hover:text-[#f43f5e]'>
+                        <a className='cursor-pointer'>
+                        <Link to="/">Products</Link>
+                        </a>
+                      </li>
+                      <li className='hover:scale-125 duration-300 py-1 hover:text-[#f43f5e]'>
+                        <a className='cursor-pointer'>
+                        <Link to="/topics">Topics</Link>
+                        </a>
+                      </li>
+                      <li className='hover:scale-125 duration-300 py-1 hover:text-[#f43f5e]'>
+                        <a className='cursor-pointer'><Link to="/blog">Blog</Link></a>
+                      </li>
+                      <li className='hover:scale-125 duration-300 py-1 hover:text-[#f43f5e]'>
+                        <a className='cursor-pointer'><Link to="/community">Community</Link></a>
+                      </li>
+                    </ul>
+                    {/* <a className='py-1  hover:text-xl hover:scale-125 duration-300 hover:text-[#f43f5e] '><Link to="/">Products</Link></a>
+                    <a className='py-1  hover:text-xl hover:scale-125 duration-300 hover:text-[#f43f5e]'><Link to="/topics">Topics</Link></a>
+                    <a className='py-1  hover:text-xl hover:scale-125 duration-300 hover:text-[#f43f5e]'><Link to="/blog">Blog</Link></a>
+                    <a className='py-1  hover:text-xl hover:scale-125 duration-300 hover:text-[#f43f5e]'><Link to="/community">Community</Link></a> */}
                   </div>
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <div className="btn text-white px-5 py-2 border-2 rounded-md cursor-pointer font-bold bg-[#f43f5e]">
+                <div className="btn text-white px-5 py-2 border-2 rounded-md cursor-pointer font-bold bg-[#f43f5e] hover:bg-gradient-to-r from-red-200 to-red-600">
                 {!isAuthenticated && <button type="button" onClick={() => login()}>Login</button>}
         {isAuthenticated && userinfo && (
             <div>
