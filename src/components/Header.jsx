@@ -70,10 +70,6 @@ const Header = () => {
                         <a className='cursor-pointer'><Link to="/community">Community</Link></a>
                       </li>
                     </ul>
-                    {/* <a className='py-1  hover:text-xl hover:scale-125 duration-300 hover:text-[#f43f5e] '><Link to="/">Products</Link></a>
-                    <a className='py-1  hover:text-xl hover:scale-125 duration-300 hover:text-[#f43f5e]'><Link to="/topics">Topics</Link></a>
-                    <a className='py-1  hover:text-xl hover:scale-125 duration-300 hover:text-[#f43f5e]'><Link to="/blog">Blog</Link></a>
-                    <a className='py-1  hover:text-xl hover:scale-125 duration-300 hover:text-[#f43f5e]'><Link to="/community">Community</Link></a> */}
                   </div>
                 </div>
               </div>
@@ -92,10 +88,10 @@ const Header = () => {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
-              <a href="#" className='text-gray-600  block px-3 py-2 rounded-md text-base font-medium'><Link to="/newsletter">Products</Link></a>
-                <a href="#" className='text-gray-600 block px-3 py-2 rounded-md text-base font-medium'><Link to="/topics">Topics</Link></a>
-                <a href="#" className='text-gray-600 block px-3 py-2 rounded-md text-base font-medium'><Link to="/blog">Blog</Link></a>
-                <a href="#" className='text-gray-600 block px-3 py-2 rounded-md text-base font-medium'>Community</a>
+                <a className='text-gray-600  block px-3 py-2 rounded-md text-base font-medium'><Link to="/">Products</Link></a>
+                <a className='text-gray-600 block px-3 py-2 rounded-md text-base font-medium'><Link to="/topics">Topics</Link></a>
+                <a className='text-gray-600 block px-3 py-2 rounded-md text-base font-medium'><Link to="/blog">Blog</Link></a>
+                <a className='text-gray-600 block px-3 py-2 rounded-md text-base font-medium'><Link to="/community">Community</Link></a>
             </div>
           </Disclosure.Panel>
         </>
