@@ -10,12 +10,6 @@ export const Newsletter = () => {
       </div>
       <div className="bg-white rounded shadow ">
         <div>
-          <div className="border-b border-gray-200">
-            <img src={Advertisment} alt="advertisment newletter" />
-            <div className="text-xl text-gray-900 text-center pt-4 pb-4">
-              Star in a Super Bowl ad 🏈
-            </div>
-          </div>
           <div className="p-5">
             <span className="font-bold text-base text-gray-900 pb-2 flex">
               Get the best new products in your inbox, every day 👇
@@ -30,7 +24,7 @@ export const Newsletter = () => {
                   placeholder="Your email"
                 />
                 <div className="mt-3">
-                  <button className="primary text-f11 font-bold uppercase inline-flex text-white items-center bg-orange border-0 py-2 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 w-full">
+                  <button className="primary text-f11 font-bold bg-[#f43f5e] uppercase inline-flex text-white items-center bg-orange border-0 py-2 px-3 focus:outline-none rounded text-base mt-4 md:mt-0 w-full">
                     <span className="f13 text-center mx-auto">Subscribe</span>
                   </button>
                 </div>
