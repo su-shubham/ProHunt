@@ -7,6 +7,7 @@ import RequireAuth from './RequireAuth';
 import Newsletter from './Newsletter';
 import Topics from './Topics';
 import LandPage from './LandPage';
+import AllPost from './AllPost'
 import Todaylist from './Todaylist'
 import {  Popover  } from '@typeform/embed-react'
 
@@ -23,13 +24,22 @@ function Fief() {
         <Routes>  {}
           <Route path="/" element={<LandPage />} /> {}
           <Route path="/topics" element={<Topics />} />{}
+          <Route path="/topics/:name" element={<AllPost/>} />{}
           <Route path="/callback" element={<Callback />} /> {}
         </Routes>
       </div>
     </FiefAuthProvider> 
      <div className="example_popover">
-     <Popover id={import.meta.env.VITE_TYPEFORM}>
-       <button className="btn">Open Popover</button>
+     <Popover 
+     id={import.meta.env.VITE_TYPEFORM}
+     chat={true}
+     opacity={90}
+     autoClose={5}
+     lazy={true}
+     buttonColor={"#F43F5E"}
+     customIcon={"🗨️"}
+     >
+       <button className="btn">Open</button>
      </Popover>
    </div>
    </>
