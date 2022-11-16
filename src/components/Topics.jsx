@@ -1,43 +1,48 @@
 import React from "react";
-import Asidebar from "./Asidebar";
+import axios from "axios";
+import { Link } from 'react-router-dom';
 
 // want to add col span differ like todayList
-
 const Topics = () => {
-  return (
-    <div className="pt-20">
-      <div className="container mx-auto px-5">
-        <div className="pt-6 grid grid-cols-1 lg:grid-cols-6 lg:gap-6 ">
-          <div className="col-span-4 sm:col-span-4 lg:col-span-4">
-            <div className="upper ">
+  const [data, setData] = React.useState([])
+  React.useEffect(() => {
+    axios.get('http://localhost:8000/topics/')
+      .then(res => setData(res.data))
+  },[]);
+  return(
+              <div className="pt-20">
+              <div className="container mx-auto px-5">
+              <div className="pt-6 grid grid-cols-1 lg:grid-cols-6 lg:gap-6 ">
+              <div className="col-span-4 sm:col-span-4 lg:col-span-4">
+          <div className="upper ">
               <h2 className="text-5xl font-[600] tracking-tight">Topics</h2>
               <p className="my-5 ml-3 text-lg font-300">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
-                dolor quisquam distinctio perspiciatis consequuntur at
-                reiciendis nisi ad deserunt error.
+              Follow your favorite topics to be notified of the newest products in that space.
               </p>
-            </div>
+              { data.map((p)=>{
+              return(
             <div className="flex bg-white rounded shadow overflow-hidden sm:flex items-center mb-6 ">
               <div className="flex w-full ">
                 <ul className="w-full col-span-4">
                   <li>
-                    <div className="flex pl-5 pr-24 pt-5 pb-5 relative border-b border-gray-200 transition ease-in-out duration-300 bg-gradient-to-tr from-white hover:via-white hover:to-rose-200 z-1">
+                    <div className="flex pl-5 pr-24 pt-2 pb-5 relative border-b border-gray-200 transition ease-in-out duration-300 bg-gradient-to-tr from-white hover:via-white hover:to-rose-200 z-1">
                       <div>
-                        <img
+                      <img
                           className="w-20 h-20"
-                          src="https://raw.githubusercontent.com/Sarika11-06/product_hunt_ui_clone/main/src/assets/kona.jpeg"
+                          src={p.image_url}
                           alt="product hunt"
                         />
                       </div>
                       <div className="ml-2">
                         <h3 className="text-base font-bold text-gray-900">
-                          Audioblogs
+                         <Link to ={`/topics/${p.name}`}>
+                          {p.name}
+                          </Link>
                         </h3>
                         <p className="text-f13 font-normal">
-                          <a href="javascript.void(0)">
-                            Listen to any web article in your podcast player
-                          </a>
+                            {p.content}
                         </p>
+
                         <div className="visible md:invisible ">
                           <span className="inline-flex items-center mt-3 border border-grey-100 rounded pl-2 pb-1 pt-1 pr-2 ">
                             <button className="">Follow</button>
@@ -54,11 +59,9 @@ const Topics = () => {
                 </ul>
               </div>
             </div>
-          </div>
+      )})}
         </div>
-      </div>
-    </div>
-  );
-};
+        </div></div></div></div>
+)}
 
 export default Topics;

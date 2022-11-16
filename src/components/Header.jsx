@@ -75,10 +75,10 @@ const Header = () => {
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div className="btn text-white px-5 py-2 border-2 rounded-md cursor-pointer font-bold bg-[#f43f5e] hover:bg-gradient-to-r from-red-200 to-red-600">
-                {!isAuthenticated && <button type="button" onClick={() => login()}>Login</button>}
+                {!isAuthenticated && <button type="button" onClick={() => login()}>Login ➡️</button>}
         {isAuthenticated && userinfo && (
             <div>
-            <button type="button" onClick={() => logout()}>Logout</button>
+            <button type="button" onClick={() => logout()}>⬅️  Logout</button>
           </div>
         )}
                     </div>
