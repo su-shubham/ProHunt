@@ -39,3 +39,93 @@
 .read-the-docs {
   color: #888;
 }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.container {
+  width: 25rem;
+  height: 100%;
+  margin: 0 rem;
+  margin-block-end: 2rem;
+  position: relative;
+}
+h2 {
+  margin: 2rem;
+  font-size: 20px;
+}
+.searchbar {
+  font-size: 2.4rem;
+  width: 25rem;
+  height: 3rem;
+  box-shadow: 5rem;
+  border-radius: 10rem;
+  padding: 2rem;
+  transition: all .1s;
+  transition-delay: .1s;
+  
+}
+.searchbar:hover {
+  width: 25.5rem;
+  height: 3.5rem;
+}
+.button {
+  height: 2rem;
+  position: absolute;
+  top: 0.7rem;
+  left: 22.5rem;
+  transition: all .1s;
+  transition-delay: .1s;
+}
+.button:hover {
+  cursor: pointer;
+}
+.searchbar:hover + .button {
+  height: 2.2rem;
+  top: 1rem;
+  right: 0;
+}
+.searchbar::placeholder {
+  opacity: .3;
+}
+
+.dropdown{
+  display: inline-block;
+  margin-left: 30rem;
+}
+.dropbtn{
+  background-color: rgb(241, 236, 245);
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e9eaf0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+  .dropdown:hover .dropdown-content {
+  display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+  background-color: #f3f0f1;
+  }

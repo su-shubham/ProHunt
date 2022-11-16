@@ -19,6 +19,18 @@ const Topics = () => {
               <p className="my-5 ml-3 text-lg font-300">
               Follow your favorite topics to be notified of the newest products in that space.
               </p>
+              <div class="container">
+      <input type="text" maxlength="12" placeholder="Search Topics.." class="searchbar"></input>
+      <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" width="28px" height="22px" alt="search icon" class="button"></img>
+        <div class="dropdown" float="right;">
+        <button class="dropbtn">Trending</button>
+            <div class="dropdown-content">
+            <a href="#">Name</a>
+            <a href="#">Popular</a>
+            </div>
+        </div>
+      </div>
+
               { data.map((p)=>{
               return(
             <div className="flex bg-white rounded shadow overflow-hidden sm:flex items-center mb-6 ">
