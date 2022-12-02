@@ -27,9 +27,17 @@ function Fief() {
         </Routes>
       </div>
     </FiefAuthProvider> 
-     <div className="example_popover">
-     <Popover id={import.meta.env.VITE_TYPEFORM}>
-       <button className="btn">Open Popover</button>
+      <div className="example_popover">
+     <Popover 
+     id={import.meta.env.VITE_TYPEFORM}
+     chat={true}
+     opacity={90}
+     autoClose={5}
+     lazy={true}
+     buttonColor={"#F43F5E"}
+     customIcon={"🗨️"}
+     >
+       <button className="btn">Open</button>
      </Popover>
    </div>
    </>
