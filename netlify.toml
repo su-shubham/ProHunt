@@ -1,4 +1,0 @@
-[dev]
-  command = "yarn dev"
-  port = 3000
-  targetPort = 5173
