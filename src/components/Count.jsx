@@ -15,7 +15,7 @@ function Count() {
     <div>
       <button className="" onClick={() => addAmount()}></button>
 
-      <div className="absolute top-25 right-40 border border-gray-200 rounded">
+      <div className="absolute top-3 right-5 border lg:right-15 w-10 h-14 items-center border-gray-200 rounded">
         <div
           className="flex-col align-center items-center pl-2 pr-2 pt-4 pb-4 inset-y-3"
           onClick={() => addAmount()}
@@ -32,8 +32,8 @@ function Count() {
               fill="black"
             />
           </svg>
-          <span className="text-f13 font-semibold mt-1 block">
-            <p>{count}</p>
+          <span className="text-f13 font-semibold mt-1 text-center block">
+            <p className="items-center m-auto">{count}</p>
           </span>
         </div>
       </div>
