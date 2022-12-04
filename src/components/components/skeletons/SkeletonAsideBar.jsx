@@ -17,4 +17,4 @@ function SkeletonAsideBar() {
   )
 }
 
-export default SkeletonAsideBar
+export default SkeletonAsideBar;
