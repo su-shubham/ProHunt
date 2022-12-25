@@ -45,20 +45,14 @@ const Header = () => {
                     )}
                   </Disclosure.Button>
                 </div>
-                <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex flex-shrink-0 items-center">
-                    {/* <Link to="/">
-                <img
-                    className="block h-8 w-auto lg:hidden animate-bounce"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                  />
-                </Link> */}
                     <img
-                      className=" h-8 w-auto animate-bounce"
+                      className=" h-20 w-auto"
                       src="../src/assets/logo.png"
                       alt="Your Company"
                     />
                   </div>
+                <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
                       <ul className="text-lg tracking-wide items-center flex gap-x-8">
@@ -77,11 +71,6 @@ const Header = () => {
                             <Link to="/newsletter">Newsletter</Link>
                           </a>
                         </li>
-                       {/* <li className="hover:scale-125 duration-300 py-1 hover:text-[#f43f5e]">
-                          <a className="cursor-pointer">
-                            <Link to="/community">Community</Link>
-                          </a>
-                        </li> */}
                       </ul>
                     </div>
                   </div>
