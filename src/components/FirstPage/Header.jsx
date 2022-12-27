@@ -5,7 +5,7 @@ import {
 } from "@fief/fief/react";
 import React, { useCallback } from "react";
 import { Link } from "react-router-dom";
-import { Fragment } from "react";
+import Logo from "./Image/logo.png"
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -24,6 +24,7 @@ const Header = () => {
     fiefAuth.logout(`${window.location.protocol}//${window.location.host}`);
   }, [fiefAuth]);
 
+  const scrset = `${Logo} 1024w, ${Logo} 640w, ${Logo} 320w`;
   return (
     <>
       <Disclosure
@@ -45,17 +46,13 @@ const Header = () => {
                     )}
                   </Disclosure.Button>
                 </div>
+                  <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex flex-shrink-0 items-center">
-                    <img
-                      className=" h-20 w-auto"
-                      src="../src/assets/logo.png"
-                      alt="Your Company"
-                    />
+                  <img srcset={scrset} sizes="1000px"  alt="Monitoring"  className="block h-24 w-auto lg:block"/>
                   </div>
-                <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
-                      <ul className="text-lg tracking-wide items-center flex gap-x-8">
+                      <ul className="text-lg leading-[7.5rem] tracking-wide items-center flex gap-x-8">
                         <li className="hover:scale-125 duration-300 py-1 hover:text-[#f43f5e]">
                           <a className="cursor-pointer">
                             <Link to="/">Products</Link>

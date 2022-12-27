@@ -2,7 +2,7 @@ import Asidebar from "./Asidebar";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import Articles from "../SkeletonComponent/Articles";
-import Cards from "./Cards.png";
+import Cards from "./Image/Cards.png";
 
 const headerLandPage = {
   hidden: {
