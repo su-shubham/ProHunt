@@ -13,20 +13,20 @@ import Foot from './Foot';
 
 function Fief() {
 
-  const [state, setState] = useState({})
-  const [loading, setLoading] = useState(false)
+  // const [state, setState] = useState({})
+  // const [loading, setLoading] = useState(false)
 
-  useEffect(() => {
-    setLoading(true)
-    fetch("")
-      .then(res => res.json)
-      .then(data => {
-        setTimeout(() => {
-          setLoading(false)
-          setState(data)
-        }, 4000)
-      })
-  }, [])
+  // useEffect(() => {
+  //   setLoading(true)
+  //   fetch("")
+  //     .then(res => res.json)
+  //     .then(data => {
+  //       setTimeout(() => {
+  //         setLoading(false)
+  //         setState(data)
+  //       }, 4000)
+  //     })
+  // }, [])
 
   return (
     <>
@@ -42,6 +42,7 @@ function Fief() {
         <Routes>  {}
           <Route path="/" element={<LandPage />} /> {}
           <Route path="/topics" element={<Topics />} />{}
+          <Route path="/newsletter" element={<Newsletter />} />{}
           <Route path="/topics/:name" element={<AllPost/>} />{}
           <Route path="/callback" element={<Callback />} /> {}
           

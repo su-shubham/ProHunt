@@ -11,7 +11,7 @@ const Articles = () => {
 
   useEffect(() => {
     setTimeout(async () => {
-      const res = await fetch('https://prohunt-fastapi.herokuapp.com/posts/')
+      const res= await fetch('https://infinite-lake-66499.herokuapp.com/posts/')
       const data = await res.json()
       setArticles(data)
     }, 5000)
@@ -40,7 +40,7 @@ const Articles = () => {
                 </div>
                 <div className="mr-2 ml-4 ">
                 <h3 className="text-base font-bold text-gray-900">
-                  {article.id}
+                  {article.title}
                 </h3>
                 <p className="md:text-base sm:text-sm font-normal">
                   {article.description}
@@ -55,8 +55,8 @@ const Articles = () => {
             </ul>
             </div>
             </div>
-            <h3>{ article.title }</h3>
-            <p>{ article.body }</p>
+            {/* <h3>{ article.title }</h3>
+            <p>{ article.body }</p> */}
           </div>
         ))
       )}
