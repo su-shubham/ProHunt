@@ -7,7 +7,9 @@ const Topics = () => {
   const [data, setData] = React.useState([]);
   React.useEffect(() => {
     axios
-      .get(import.meta.env.VITE_FETCH+"posts")
+      .get(
+        import.meta.env.VITE_FETCH+"topics/"
+        )
       .then((res) => setData(res.data));
   }, []);
   return (

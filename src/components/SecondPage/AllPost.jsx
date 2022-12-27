@@ -9,7 +9,7 @@ const AllPost = () => {
   useEffect(() => {
     setTimeout(async () => {
       const res = await fetch(
-        import.meta.env.VITE_FETCH+`posts/${name}`
+        import.meta.env.VITE_FETCH+`topics/${name}`
       );
       const data = await res.json();
       setData(data);
@@ -24,14 +24,9 @@ const AllPost = () => {
               <div className="upper ">
                 <div className="flex">
                   <h2 className=" text-5xl font-[600] tracking-tight">
-                    Productivity
+                  {name}
                   </h2>
                 </div>
-                <p className="my-5 ml-3 text-lg font-300">
-                  Follow your favorite topics to be notified of the newest
-                  products in that space.
-                </p>
-
                 {data.map((p) => {
                   return (
                     <div
@@ -77,3 +72,4 @@ const AllPost = () => {
 };
 
 export default AllPost;
+
