@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react'
-// import Projects from './Projects'\
 import { Link } from 'react-router-dom'
-import Count from "../Count"
+import Count from "../FirstPage/Count"
 import SkeletonArticle from './skeletons/SkeletonArticle'
-// import SkeletonProject from './skeletons/SkeletonProject'
 
 const Articles = () => {
 

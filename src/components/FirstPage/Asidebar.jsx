@@ -1,10 +1,10 @@
 import React from "react";
-import Sideone from "../assets/sideOne.jpeg";
-import Sidetwo from "../assets/sideTwo.jpeg";
-import Sidethree from "../assets/sideThree.png";
-import SkeletonAsideBar from "./components/skeletons/SkeletonAsideBar";
+import Sideone from "D:/Pro/ProHunt/src/assets/sideOne.jpeg"
+import Sidetwo from "D:/Pro/ProHunt/src/assets/sideTwo.jpeg"
+import Sidethree from "D:/Pro/ProHunt/src/assets/sideThree.png"
+import SkeletonAsideBar from "../SkeletonComponent/skeletons/SkeletonAsideBar";
 import { useState } from "react";
-import SkeletonElement from "./components/skeletons/SkeletonElement";
+import SkeletonElement from "../SkeletonComponent/skeletons/SkeletonElement";
 
 export const Asidebar = () => {
   const [skeletonData, setSkeletonData] = useState(true);

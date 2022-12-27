@@ -1,15 +1,14 @@
 import { FiefAuthProvider } from "@fief/fief/react";
 import { Routes, Route } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import Callback from "./Callback";
-import Header from "./Header";
-import RequireAuth from "./RequireAuth";
-import Newsletter from "./Newsletter";
-import Topics from "./Topics";
-import LandPage from "./LandPage";
-import AllPost from "./AllPost";
+import Callback from "./AuthenticationPage/Callback";
+import Header from "./FirstPage/Header";
+import Newsletter from "./LastPage/Newsletter";
+import Topics from "./SecondPage/Topics";
+import LandPage from "./FirstPage/LandPage";
+import AllPost from "./SecondPage/AllPost";
 import { Popover } from "@typeform/embed-react";
-import Foot from "./Foot";
+import Foot from "./FirstPage/Foot";
 
 function Fief() {
   const [state, setState] = useState({});
@@ -37,12 +36,9 @@ function Fief() {
           >
             <div className="flex-grow">
               <Header />
-              <Routes>
-                {" "}
-                {}
+              <Routes>{}
                 <Route path="/" element={<LandPage />} /> {}
-                <Route path="/topics" element={<Topics />} />
-                {}
+                <Route path="/topics" element={<Topics />} />{}
                 <Route path="/topics/:name" element={<AllPost />} />
                 {}
                 <Route path="/callback" element={<Callback />} /> {}
