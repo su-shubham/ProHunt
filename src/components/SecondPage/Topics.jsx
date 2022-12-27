@@ -7,7 +7,7 @@ const Topics = () => {
   const [data, setData] = React.useState([]);
   React.useEffect(() => {
     axios
-      .get("https://prohunt-fastapi.herokuapp.com/topics/")
+      .get(import.meta.env.VITE_FETCH+"posts")
       .then((res) => setData(res.data));
   }, []);
   return (
