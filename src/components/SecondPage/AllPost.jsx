@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Count from "./Count";
+import Count from "../FirstPage/Count";
 
 
 const AllPost = () => {

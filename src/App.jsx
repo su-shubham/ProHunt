@@ -2,8 +2,8 @@
 // import MainBody from './components/MainBody';
 // import Asidebar from './components/Asidebar';
 // import Todaylist from './components/Todaylist';
-import Foot from "./components/Foot";
-import LandPage from "./components/LandPage";
+// import Foot from "./components/Foot";
+// import LandPage from "./components/LandPage";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Fief from "./components/Fief";
