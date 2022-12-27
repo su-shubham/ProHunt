@@ -1,7 +1,10 @@
 import React from "react";
-import SkeletonAsideBar from "../SkeletonComponent/skeletons/SkeletonAsideBar";
+import Sideone from "../assets/sideOne.jpeg";
+import Sidetwo from "../assets/sideTwo.jpeg";
+import Sidethree from "../assets/sideThree.png";
+import SkeletonAsideBar from "./components/skeletons/SkeletonAsideBar";
 import { useState } from "react";
-import SkeletonElement from "../SkeletonComponent/skeletons/SkeletonElement";
+import SkeletonElement from "./components/skeletons/SkeletonElement";
 
 export const Asidebar = () => {
   const [skeletonData, setSkeletonData] = useState(true);
@@ -32,7 +35,7 @@ export const Asidebar = () => {
                   </div>
                 </div>
                 <div>
-                  <img src="https://raw.githubusercontent.com/sarika11-06/product_hunt_ui_clone/main/src/assets/sideOne.jpeg" alt="podcast" />
+                  <img src={Sideone} alt="podcast" />
                 </div>
               </div>
 
@@ -46,7 +49,7 @@ export const Asidebar = () => {
                   </div>
                 </div>
                 <div>
-                  <img src="https://raw.githubusercontent.com/sarika11-06/product_hunt_ui_clone/main/src/assets/sideTwo.jpeg" alt="podcast" />
+                  <img src={Sidetwo} alt="podcast" />
                 </div>
               </div>
 
@@ -60,7 +63,7 @@ export const Asidebar = () => {
                   </div>
                 </div>
                 <div>
-                  <img src="https://raw.githubusercontent.com/sarika11-06/product_hunt_ui_clone/main/src/assets/sideThree.png" alt="podcast" />
+                  <img src={Sidethree} alt="podcast" />
                 </div>
               </div>
 
