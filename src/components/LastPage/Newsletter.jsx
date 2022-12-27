@@ -1,5 +1,6 @@
 import React from "react";
-import Cards from "D:/Pro/ProHunt/src/assets/newsletter.png";
+// import Cards from "./src/assets/newsletter.png";
+import Cards from "./newsletter.png";
 
 export const Newsletter = () => {
 
