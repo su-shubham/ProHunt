@@ -1,5 +1,4 @@
 import React from "react";
-// import Cards from "./src/assets/newsletter.png";
 import Cards from "./newsletter.png";
 
 export const Newsletter = () => {
