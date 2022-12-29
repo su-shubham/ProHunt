@@ -53,7 +53,7 @@ function Fief() {
         </div>
         <div className="example_popover">
           <Popover
-            id={import.meta.env.VITE_FIEF_CLIENT_ID}
+            id={"s8haTiPZ"}
             chat={true}
             opacity={90}
             autoClose={5}
