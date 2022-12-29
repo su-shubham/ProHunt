@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 import Articles from "../SkeletonComponent/Articles";
 import Cards from "./Image/Cards.png";
+import But from "../Fief/"
 
 const headerLandPage = {
   hidden: {
@@ -57,6 +58,12 @@ const containerVariants = {
 
 export default function LandPage() {
   const scrset = `${Cards} 1024w, ${Cards} 640w, ${Cards} 320w`;
+  // const [isShown, setIsShown] = useState(false);
+  const handleClick = (e)=>{
+    e.preventDefault();
+    onClick=Fief.But
+    // setIsShown(current => !current);
+  }
   return (
     <motion.div
       className="containerVariants"
@@ -81,12 +88,11 @@ export default function LandPage() {
                     <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
                       <div className="mb-4">
                         
-                        <a
-                          href=""
+                        <button onClick={handleClick}
                           className="btn-sm text-white bg-[#f43f5e] hover:bg-rose-500 ml-3 p-3 rounded-md font-[700]"
                         >
                           List Your Products
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </motion.div>
