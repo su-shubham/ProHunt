@@ -113,8 +113,8 @@ const Topics = () => {
                               </div>
                             </div>
                             <div className="absolute top-25 right-40 border border-gray-200 rounded invisible md:visible">
-                              <div className="flex-col align-center items-center px-5 py-1 inset-y-3">
-                                <button className="text-lg font-[700] shadow-lg" onClick={handleButton}>
+                              <div className="flex-col align-center items-center px-5 py-1 inset-y-3 shadow-lg">
+                                <button className="text-lg font-[700]" onClick={handleButton}>
                                   {follow ? "Follow" : "Unfollow" }
                                 </button>
                               </div>
