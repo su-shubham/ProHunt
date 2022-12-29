@@ -5,6 +5,12 @@ import { Link } from "react-router-dom";
 // want to add col span differ like todayList
 const Topics = () => {
   const [data, setData] = React.useState([]);
+  const [follow, setFollow] = React.useState(true);
+  
+  function handleButton() {
+    setFollow (prevState => !prevState)
+  }
+  
   React.useEffect(() => {
     axios
       .get(
@@ -99,15 +105,17 @@ const Topics = () => {
                               </p>
 
                               <div className="visible md:invisible ">
-                                <span className="inline-flex items-center mt-3 border border-grey-100 rounded pl-2 pb-1 pt-1 pr-2 ">
-                                  <button className="">Follow</button>
+                                <span className="inline-flex items-center mt-3 border border-grey-100 rounded pl-2 pb-1 pt-1 pr-2 " onClick={handleButton}>
+                                  <button className="">
+                                    {follow ? "Follow" : "Unfollow" }
+                                  </button>
                                 </span>
                               </div>
                             </div>
                             <div className="absolute top-25 right-40 border border-gray-200 rounded invisible md:visible">
-                              <div className="flex-col align-center items-center px-5 py-1 inset-y-3">
-                                <button className="text-lg font-[700]">
-                                  Follow
+                              <div className="flex-col align-center items-center px-5 py-1 inset-y-3 shadow-lg">
+                                <button className="text-lg font-[700]" onClick={handleButton}>
+                                  {follow ? "Follow" : "Unfollow" }
                                 </button>
                               </div>
                             </div>

@@ -63,7 +63,7 @@ export const Newsletter = () => {
                 </div>
                 <div className="action w-full flex justify-center items-center mb-8 ">
                   <button onClick = {handleFormSubmit} className=" border-0 px-5 py-4 uppercase bg-[#f43f5e] text-[#fff] font-extrabold tracking-wide hover:shadow-xl rounded-md outline-none ">
-                    <h1>
+                    <h1 onClick={changeButton}>
                       {button ? "Subscribe" : "Subscribed"}
                       </h1>
                   </button>
