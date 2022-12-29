@@ -17,9 +17,6 @@ export const Asidebar = () => {
           <div>
             <div className="mt-3 text-base font-bold mb-3 text-gray-900">
               Upcomming Products
-              <span className="text-f13 ml-2 text-gray-500 font-normal">
-                Powered by Ship
-              </span>
             </div>
             <div className="bg-white rounded shadow ">
               <div className="border-b border-gray-200 overflow-hidden sm:flex justify-between p-5 items-center">
