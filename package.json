@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@fief/fief": "^0.10.1",
-    "@headlessui/react": "^0.0.0-insiders.f66f492",
+    "@headlessui/react": "^0.3.2",
     "@heroicons/react": "^2.0.12",
     "@tabler/icons": "^1.108.0",
     "@typeform/embed-react": "^2.15.0",
